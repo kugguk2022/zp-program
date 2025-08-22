@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
  A focused, reproducible research repo for the arithmetic nature of the number:
- $$ Z(p) \;=\; e^{\pi\,\zeta(p-1)/p} + 1 \qquad (p \text{ prime }\ge 3,\ p \text{ odd})$$
+ $$ Z(p)= e^{\pi\,\zeta(p-1)/p} + 1 \qquad (p \text{ prime }\ge 3,\ p \text{ odd})$$
 
 This project keeps things **tight**: only the math needed for $Z(p)$.  
 We derive the exact rational coefficient $c_p$, explain **why** transcendence here is hard,
