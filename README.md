@@ -1,21 +1,26 @@
 # Z(p) Irrationality & Transcendence Program
 
-> A focused, reproducible research repo for the arithmetic nature of  
+> A focused, reproducible research repo for the arithmetic nature of
+> <p align="center">
 > $\[ Z(p) \;=\; e^{\pi\,\zeta(p-1)/p} + 1 \qquad (p \text{ prime }\ge 3,\ p \text{ odd}) .\]$
-
-This project keeps things **tight**: only the math needed for Z(p).  
-We derive the exact rational coefficient \(c_p\), explain **why** transcendence here is hard,
+</p>
+This project keeps things **tight**: only the math needed for $Z(p)$.  
+We derive the exact rational coefficient $\(c_p\)$, explain **why** transcendence here is hard,
 state **clean conditional theorems**, and provide **reproducible numeric evidence** (PSLQ scans) — clearly marked as *heuristics*, not proofs.
 
 ---
 
 ## 🧭 TL;DR
-- For any odd prime \(p\ge 3\), write
-  \[ Z(p) = e^{c_p\,\pi^p} + 1, \]
+- For any odd prime $\(p\ge 3\)$, write
+<p align="center">
+  $\[ Z(p) = e^{c_p\,\pi^p} + 1, \]$
+</p>
   where
-  \[ c_p \;=\; (-1)^{\frac{p+1}{2}}\;\frac{2^{\,p-2}\, B_{p-1}}{p\,(p-1)!}\;\in\;\mathbb{Q}\setminus\{0\}, \]
-  and \(B_{n}\) is the \(n\)-th Bernoulli number.
-- Proving \(Z(p)\) is transcendental reduces to proving \(e^{c_p\pi^{p}}\) is transcendental.  
+  <p align="center">
+  $\[ c_p \;=\; (-1)^{\frac{p+1}{2}}\;\frac{2^{\,p-2}\, B_{p-1}}{p\,(p-1)!}\;\in\;\mathbb{Q}\setminus\{0\}, \]$
+  </p>
+  and $\(B_{n}\)$ is the $\(n\)-th$ Bernoulli number.
+- Proving $\(Z(p)\)$ is transcendental reduces to proving $\(e^{c_p\pi^{p}}\)$ is transcendental.  
   This is **not** settled by standard theorems (LW, Gelfond–Schneider, Baker–Wüstholz).  
 - We outline **conditional routes** (Schanuel, Four Exponentials, “π-power Lindemann”) and supply **numerical evidence** via PSLQ with reproducibility.
 
@@ -24,19 +29,22 @@ state **clean conditional theorems**, and provide **reproducible numeric evidenc
 ## 🧮 Math snapshot
 
 Using the classical even–zeta formula
-\[\zeta(2k)=\frac{(-1)^{k+1} B_{2k}(2\pi)^{2k}}{2(2k)!},\]
-let \(k=(p-1)/2\). Then
-\[\frac{\pi\,\zeta(2k)}{p} \;=\; \frac{(-1)^{k+1} B_{2k}\,2^{2k-1}\,\pi^{2k+1}}{(2k)!\,(2k+1)} \;=\; c_p\,\pi^{p}.\]
+<p align="center">
+$\[\zeta(2k)=\frac{(-1)^{k+1} B_{2k}(2\pi)^{2k}}{2(2k)!},\]$
+</p>
+let $\(k=(p-1)/2\)$. Then
+<p align="center">
+$\[\frac{\pi\,\zeta(2k)}{p} \;=\; \frac{(-1)^{k+1} B_{2k}\,2^{2k-1}\,\pi^{2k+1}}{(2k)!\,(2k+1)} \;=\; c_p\,\pi^{p}.\]$
 
-Therefore \(Z(p)=e^{c_p\pi^{p}}+1\) with
-\[\boxed{\,c_p = (-1)^{\frac{p+1}{2}} \,\frac{2^{\,p-2}\, B_{p-1}}{p\, (p-1)!}\in\mathbb{Q}\,}.\]
+Therefore $\(Z(p)=e^{c_p\pi^{p}}+1\)$ with
+$\[\boxed{\,c_p = (-1)^{\frac{p+1}{2}} \,\frac{2^{\,p-2}\, B_{p-1}}{p\, (p-1)!}\in\mathbb{Q}\,}.\]$
 
 **Sanity checks**
 | p | \(c_p\) | Reason |
 |---|---------|--------|
-| 3 | \(1/18\) | \(\pi\zeta(2)/3 = \pi^3/18\) |
-| 5 | \(1/450\) | \(\pi\zeta(4)/5 = \pi^5/450\) |
-| 7 | \(1/6615\) | \(\pi\zeta(6)/7 = \pi^7/6615\) since \(\zeta(6)=\pi^6/945\) |
+| 3 | $\(1/18\)$ | $\(\pi\zeta(2)/3 = \pi^3/18\)$ |
+| 5 | $\(1/450\)$ | $\(\pi\zeta(4)/5 = \pi^5/450\)$ |
+| 7 | $\(1/6615\)$ | $\(\pi\zeta(6)/7 = \pi^7/6615\) since \(\zeta(6)=\pi^6/945\)$ |
 
 ---
 
