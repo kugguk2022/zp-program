@@ -2,7 +2,7 @@
 
 > A focused, reproducible research repo for the arithmetic nature of
 > <p align="center">
-> $\[ Z(p) \;=\; e^{\pi\,\zeta(p-1)/p} + 1 \qquad (p \text{ prime }\ge 3,\ p \text{ odd}) .\]$
+> $[ Z(p) \;=\; e^{\pi\,\zeta(p-1)/p} + 1 \qquad (p \text{ prime }\ge 3,\ p \text{ odd}) .]$
 </p>
 This project keeps things **tight**: only the math needed for $Z(p)$.  
 We derive the exact rational coefficient $\(c_p\)$, explain **why** transcendence here is hard,
