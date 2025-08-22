@@ -3,10 +3,8 @@
 [![CI](https://github.com/YOUR_GITHUB_USERNAME/zp-program/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_GITHUB_USERNAME/zp-program/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> A focused, reproducible research repo for the arithmetic nature of the number:
-> $$
-> Z(p) \;=\; e^{\pi\,\zeta(p-1)/p} + 1 \qquad (p \text{ prime }\ge 3,\ p \text{ odd})
-> $$
+ A focused, reproducible research repo for the arithmetic nature of the number:
+ $$ Z(p) \;=\; e^{\pi\,\zeta(p-1)/p} + 1 \qquad (p \text{ prime }\ge 3,\ p \text{ odd})$$
 
 This project keeps things **tight**: only the math needed for $Z(p)$.  
 We derive the exact rational coefficient $c_p$, explain **why** transcendence here is hard,
@@ -16,13 +14,10 @@ state **clean conditional theorems**, and provide **reproducible numeric evidenc
 
 ## 🧭 TL;DR
 - For any odd prime $p\ge 3$, write
-  $$
-  Z(p) = e^{c_p\pi^p} + 1,
-  $$
+  $$  Z(p) = e^{c_p\pi^p} + 1,$$
   where
-  $$
-  c_p \;=\; (-1)^{\frac{p+1}{2}}\;\frac{2^{\,p-2}\, B_{p-1}}{p\,(p-1)!}\;\in\;\mathbb{Q}\setminus\{0\},
-  $$
+  $$  c_p \;=\; (-1)^{\frac{p+1}{2}}\;\frac{2^{\,p-2}\, B_{p-1}}{p\,(p-1)!}\;\in\;\mathbb{Q}\setminus\{0\},$$
+
   and $B_{n}$ is the $n$-th Bernoulli number.
 - Proving $Z(p)$ is transcendental reduces to proving $e^{c_p\pi^{p}}$ is transcendental.  
   This is **not** settled by standard theorems (LW, Gelfond–Schneider, Baker–Wüstholz).  
